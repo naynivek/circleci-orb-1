@@ -4,12 +4,12 @@ description: >
 executor: default
 
 docker:
-  - image: circleci/<< parameters.image >>
+  - image: << parameters.image >>
 
 parameters:
   image:
     type: string
-    default: "node:10.16.0-browsers"
+    default: "cimg/node:14.19.1-browsers"
     description: "Node image"
 
 steps:
